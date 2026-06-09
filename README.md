@@ -1,6 +1,10 @@
-# Weather Cards
+# Simple Weather
 
-A glassmorphism weather application built with TanStack Start and React. It fetches real-time conditions from Open-Meteo's free API, resolves the user's position automatically via the browser Geolocation API, and renders live temperature, humidity, wind speed, pressure, sunrise, and sunset data inside an animated, condition-reactive UI.
+<p align="center">
+  <img src="./public/Images/Images.png" alt="Weather Banner" width="100%">
+</p>
+
+Simple Weather is a modern weather application built with TanStack Start and React that automatically detects your location and displays real-time weather information powered by the free Open-Meteo API.
 
 ---
 
