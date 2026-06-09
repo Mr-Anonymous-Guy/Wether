@@ -25,39 +25,69 @@ export const PRIMARY_KEYWORDS = [
   "weather",
   "weather forecast",
   "current weather",
-  "today weather",
   "live weather",
-  "temperature",
-  "weather app",
-  "weather near me",
   "local weather",
+  "temperature",
   "hourly weather",
   "7 day forecast",
   "weather updates",
-  "rain forecast",
-  "wind speed",
-  "humidity",
-  "air pressure",
-  "weather tracker",
-  "weather dashboard",
-  "free weather app",
+  "weather radar",
+  "weather app",
 ];
 
 // ── Long-tail keywords ──────────────────────────────────────────
 export const LONG_TAIL_KEYWORDS = [
   "current weather in my location",
   "today weather forecast",
-  "live weather updates",
-  "weather near me now",
-  "temperature and humidity",
-  "weekly weather forecast",
-  "free weather website",
-  "real-time weather tracker",
-  "beautiful weather app",
-  "weather cards",
+  "live weather updates near me",
+  "temperature and humidity today",
+  "weekly weather forecast free",
+  "real-time weather tracker online",
+  "beautiful weather app for desktop",
+  "accurate local weather forecast",
 ];
 
-export const ALL_KEYWORDS = [...PRIMARY_KEYWORDS, ...LONG_TAIL_KEYWORDS];
+// ── Question / Voice Search keywords ────────────────────────────
+export const VOICE_KEYWORDS = [
+  "what is the weather today",
+  "is it going to rain today",
+  "weather forecast for tomorrow",
+  "what's the temperature right now",
+  "show me the weather for the week",
+];
+
+// ── Semantic / LSI keywords ─────────────────────────────────────
+export const LSI_KEYWORDS = [
+  "meteorology",
+  "climate",
+  "precipitation",
+  "atmospheric pressure",
+  "wind speed",
+  "UV index",
+  "weather conditions",
+  "cloud cover",
+];
+
+// ── Local Intent keywords ───────────────────────────────────────
+export const LOCAL_KEYWORDS = [
+  "weather near me",
+  "local weather forecast",
+  "my city weather",
+  "current temperature outside",
+];
+
+export const ALL_KEYWORDS = [
+  ...PRIMARY_KEYWORDS,
+  ...LONG_TAIL_KEYWORDS,
+  ...VOICE_KEYWORDS,
+  ...LSI_KEYWORDS,
+  ...LOCAL_KEYWORDS,
+];
+
+// ── SEO Descriptions ────────────────────────────────────────────
+export const SITE_DESCRIPTION_SHORT = "Live weather forecasts with beautiful glassmorphism design.";
+export const SITE_DESCRIPTION_LONG = "Weather Cards provides highly accurate, real-time weather forecasts powered by Open-Meteo. Enjoy a beautiful, lightning-fast weather dashboard featuring automatic location detection, detailed 7-day outlooks, and live atmospheric conditions.";
+export const SITE_DESCRIPTION_APP_STORE = "Get the most beautiful and accurate weather forecasts with Weather Cards. Features include live temperature, wind speed, humidity, and a stunning dynamic glassmorphism interface that adapts to current conditions.";
 
 // ── Image paths ─────────────────────────────────────────────────
 export const OG_IMAGE = "/images/logo.png";
