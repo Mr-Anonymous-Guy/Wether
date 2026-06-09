@@ -168,25 +168,9 @@ Set environment variables in the Vercel dashboard under **Settings → Environme
 
 ---
 
-## SEO
+## Live Preview
 
-| Signal | Implementation |
-| --- | --- |
-| Title template | `{Page Title} \| Weather Cards` — each route sets its own segment |
-| Meta description | Unique per route, keyword-rich |
-| Canonical URLs | `<link rel="canonical">` injected per route |
-| Open Graph | `og:title`, `og:description`, `og:image` (512×512 logo), `og:type`, `og:locale` |
-| Twitter Card | `summary_large_image` with title, description, and image |
-| JSON-LD | `@graph` block containing `WebSite`, `Organization`, and `WebApplication` schemas |
-| Robots | `index, follow, max-snippet:-1, max-image-preview:large` for Googlebot and Bingbot |
-| `robots.txt` | Served from `public/robots.txt`; references `/sitemap.xml` |
-| XML Sitemap | `public/sitemap.xml` — homepage at `priority 1.0`, `changefreq daily`, with image extension metadata |
-| Google Search Console | `google-site-verification` meta tag auto-injected when `VITE_GOOGLE_SITE_VERIFICATION` is set |
-| Bing Webmaster Tools | `msvalidate.01` meta tag auto-injected when `VITE_BING_SITE_VERIFICATION` is set |
-| PWA Manifest | `site.webmanifest` with full icon set and `standalone` display for Add to Home Screen |
-
-Submit the sitemap in Google Search Console at:
-`https://your-domain/sitemap.xml`
+You can visit it live in [simplewether](https://simplewether.vercel.app) website.
 
 ---
 
@@ -211,22 +195,6 @@ Submit the sitemap in Google Search Console at:
 6. Open a pull request with a clear description of the change and why it is needed.
 
 For significant changes, open an issue first to discuss the approach.
-
----
-
-## Roadmap
-
-| Item | Status |
-| --- | --- |
-| Hourly forecast | Planned |
-| 7-day weekly forecast cards | Planned |
-| Air Quality Index (AQI) | Planned |
-| UV Index | Planned |
-| Feels-like temperature | Planned |
-| Wind direction | Planned |
-| Multi-language support | Planned |
-| Unit toggle (°C / °F) | Planned |
-| Persistent last-searched city | Planned |
 
 ---
 
