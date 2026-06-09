@@ -1,0 +1,34 @@
+# robots.txt — Weather Cards
+# https://weather-cards.vercel.app/robots.txt
+#
+# Allow all crawlers to index the entire site.
+# Sitemap location is declared for Google, Bing, and other crawlers.
+
+User-agent: *
+Allow: /
+Disallow: /api/
+
+# ── Crawler-specific directives ──────────────────────────────────
+
+# Googlebot
+User-agent: Googlebot
+Allow: /
+Disallow: /api/
+Crawl-delay: 1
+
+# Googlebot-Image
+User-agent: Googlebot-Image
+Allow: /images/
+
+# Bingbot
+User-agent: bingbot
+Allow: /
+Disallow: /api/
+Crawl-delay: 2
+
+# DuckDuckBot
+User-agent: DuckDuckBot
+Allow: /
+
+# ── Sitemaps ─────────────────────────────────────────────────────
+Sitemap: https://weather-cards.vercel.app/sitemap.xml

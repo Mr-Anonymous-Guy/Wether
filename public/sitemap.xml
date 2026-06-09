@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+  xsi:schemaLocation="
+    http://www.sitemaps.org/schemas/sitemap/0.9
+    http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd
+    http://www.google.com/schemas/sitemap-image/1.1
+    http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd"
+>
+  <!--
+    Weather Cards — Sitemap
+    Auto-submitted to:
+      Google Search Console: https://search.google.com/search-console
+      Bing Webmaster Tools:  https://www.bing.com/webmasters
+  -->
+
+  <!-- ── Homepage ─────────────────────────────────────────────── -->
+  <url>
+    <loc>https://weather-cards.vercel.app/</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://weather-cards.vercel.app/images/logo.png</image:loc>
+      <image:title>Weather Cards — Beautiful Real-Time Weather Forecasts</image:title>
+      <image:caption>
+        Weather Cards provides live weather forecasts powered by Open-Meteo
+        with temperature, humidity, wind speed, and 7-day outlooks.
+      </image:caption>
+    </image:image>
+  </url>
+
+</urlset>

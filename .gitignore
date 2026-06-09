@@ -1,0 +1,65 @@
+# ── Dependencies ─────────────────────────────────────────────────
+node_modules/
+.pnp
+.pnp.js
+
+# ── Build output ──────────────────────────────────────────────────
+dist/
+dist-ssr/
+.output/
+.vinxi/
+.nitro/
+
+# ── TanStack / Vite internals ─────────────────────────────────────
+.tanstack/
+
+# ── Environment variables ─────────────────────────────────────────
+# Never commit actual secrets. Use .env.template as the committed reference.
+.env
+.env.local
+.env.*.local
+.dev.vars
+
+# ── Logs ─────────────────────────────────────────────────────────
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ── OS files ──────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ── Editor / IDE ──────────────────────────────────────────────────
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.swp
+
+# ── Cloudflare / Wrangler ─────────────────────────────────────────
+.wrangler/
+
+# ── TypeScript ────────────────────────────────────────────────────
+*.tsbuildinfo
+
+# ── Testing ───────────────────────────────────────────────────────
+coverage/
+.nyc_output/
+
+# ── Misc ──────────────────────────────────────────────────────────
+*.local
