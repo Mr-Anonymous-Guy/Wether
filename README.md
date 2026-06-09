@@ -39,8 +39,8 @@ A glassmorphism weather application built with TanStack Start and React. It fetc
 | Icons | Lucide React |
 | Weather API | [Open-Meteo](https://open-meteo.com) (no API key required) |
 | Geocoding API | [Open-Meteo Geocoding](https://open-meteo.com/en/docs/geocoding-api) |
-| Build tool | Vite 7 |
-| Package manager | npm / Bun |
+| Build tool | Vite 7 + Nitro |
+| Package manager | npm |
 | Deployment | Vercel |
 
 ---
@@ -57,6 +57,7 @@ src/
 │   ├── WeatherCard.tsx          # Main card: temperature, stats, animated icon
 │   └── WeatherIcon.tsx          # Animated Lucide icon mapped from condition
 ├── lib/
+│   ├── config.server.ts         # Server-only env helpers (.server.ts suffix)
 │   ├── geolocation.ts           # Browser Geolocation API wrapper
 │   ├── seo.ts                   # SEO constants, keyword list, schema builders
 │   └── weather.ts               # Open-Meteo fetch functions and WMO code mapper
@@ -66,7 +67,8 @@ src/
 ├── types/
 │   └── weather.ts               # WeatherData, GeoLocation, WeatherCondition types
 ├── router.tsx                   # TanStack Router + QueryClient factory
-├── server.ts                    # SSR entry point with error normalisation
+├── server.ts                    # SSR entry: delegates to TanStack Start handler
+├── start.ts                     # TanStack Start instance + error middleware
 └── styles.css                   # Tailwind v4 theme, glass-card, shimmer utilities
 
 public/
@@ -79,7 +81,7 @@ public/
 ├── favicon-32.png
 ├── robots.txt                   # Crawl directives and sitemap reference
 ├── site.webmanifest             # PWA manifest
-└── sitemap.xml                  # XML sitemap with image extension
+└── sitemap.xml                  # XML sitemap with image extension metadata
 ```
 
 ---
@@ -144,20 +146,25 @@ All variables are prefixed with `VITE_` and are exposed to the client bundle by 
 
 ### Vercel
 
-The project deploys to Vercel without any additional configuration.
+The project deploys to Vercel with zero additional configuration.
+Nitro writes `.vercel/output/` at build time; Vercel detects it automatically.
 
 ```bash
 npm install -g vercel
-vercel
-```
-
-Set the environment variables in the Vercel dashboard under **Settings → Environment Variables**. The build command (`vite build`) and output directory (`.output/public`) are detected automatically.
-
-### Vercel CLI one-liner (production)
-
-```bash
 vercel --prod
 ```
+
+Set environment variables in the Vercel dashboard under **Settings → Environment Variables**.
+
+**Vercel project settings:**
+
+| Setting | Value |
+| --- | --- |
+| Framework Preset | Other |
+| Build Command | `npm run build` |
+| Install Command | `npm install` |
+| Output Directory | *(leave blank — Nitro writes `.vercel/output/` automatically)* |
+| Node.js Version | 20.x |
 
 ---
 
