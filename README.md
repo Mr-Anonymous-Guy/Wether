@@ -1,7 +1,7 @@
 # Simple Weather
 
 <p align="center">
-  <img src="./public/Images/Images.png" alt="Weather Banner" width="100%">
+  <img src="./public/Images.png" alt="Weather Banner" width="100%">
 </p>
 
 Simple Weather is a modern weather application built with TanStack Start and React that automatically detects your location and displays real-time weather information powered by the free Open-Meteo API.
