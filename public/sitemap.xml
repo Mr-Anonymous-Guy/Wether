@@ -18,12 +18,12 @@
 
   <!-- ── Homepage ─────────────────────────────────────────────── -->
   <url>
-    <loc>https://weather-cards.vercel.app/</loc>
+    <loc>https://simplewether.vercel.app/</loc>
     <lastmod>2026-06-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://weather-cards.vercel.app/images/logo.png</image:loc>
+      <image:loc>https://simplewether.vercel.app/images/logo.png</image:loc>
       <image:title>Weather Cards — Beautiful Real-Time Weather Forecasts</image:title>
       <image:caption>
         Weather Cards provides live weather forecasts powered by Open-Meteo
