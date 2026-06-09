@@ -12,4 +12,16 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  // Force-enable Nitro with the Vercel SSR preset.
+  //
+  // Without this, @lovable.dev/vite-tanstack-config skips the Nitro deploy plugin
+  // when no Lovable build context is detected (i.e. every Vercel / CI build).
+  // The default preset is `cloudflare-module`; `vercel` produces the
+  // `.vercel/output/` directory that Vercel's build system expects.
+  //
+  // On Vercel you can also override this via the NITRO_PRESET environment variable
+  // ("vercel") without touching this file — both routes work.
+  nitro: {
+    preset: "vercel",
+  },
 });

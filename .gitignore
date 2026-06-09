@@ -9,6 +9,7 @@ dist-ssr/
 .output/
 .vinxi/
 .nitro/
+.vercel/output/
 
 # ── TanStack / Vite internals ─────────────────────────────────────
 .tanstack/
